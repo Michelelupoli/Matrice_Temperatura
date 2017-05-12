@@ -45,6 +45,7 @@ int main ()
 	}
 	//Ricerca misurazione 
 	int f=0; //Questo è per il flag, il flag serve casomai inseriamo una città errata 
+	string c;
 	do //Con il cilco do possiamo richiedere l'inserimento della città se ne inseriamo una sbagliata
 	{
 		cout<<"Inserisci una città: "; 
