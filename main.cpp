@@ -33,9 +33,9 @@ int main ()
 	//Ricerca misurazione minima
 	int min;
 	min=0;
-	for (i=0; i<n; i++)
+	for (i=0; i<r; i++)
 	{
-		for (j=0; j<r; j++) //Ho messo il doppio ciclo così sai anche la città oltre alla misurazione
+		for (j=0; j<c; j++) //Ho messo il doppio ciclo così sai anche la città oltre alla misurazione
 		{
 			if (mis[j] < min)
 			{
