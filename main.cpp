@@ -11,13 +11,13 @@ int main ()
 		cout<<"Inserisci numero righe: ";
 		cin>>r;
 	}
-	while ((r <= 0) && (n > 10));
+	while ((r <= 0) && (r > 10));
 	do
 	{
 		cout<<"Inserisci numero colonne: ";
 		cin>>c;
 	}
-	while ((c <= 0) && (n > 12));
+	while ((c <= 0) && (c > 12));
 	for (i=0; i<r; i++) //Inserimento città
 	{
 		cout<<"Inserisci città: ";
