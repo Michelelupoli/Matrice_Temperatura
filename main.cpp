@@ -30,6 +30,7 @@ int main ()
 			cout<<"Inserisci misurazione: ";
 			cin>>mis[i][j];
 		}
+	}
 	//Ricerca misurazione minima
 	int min;
 	min=0;
@@ -37,26 +38,26 @@ int main ()
 	{
 		for (j=0; j<c; j++) //Ho messo il doppio ciclo così sai anche la città oltre alla misurazione
 		{
-			if (mis[j] < min)
+			if (mis[i][j] < min)
 			{
-			min=mis[j];
+			min=mis[i][j];
 			}
 		}
 	}
 	//Ricerca misurazione 
-	int f=0; //Questo è per il flag, il flag serve casomai inseriamo una città errata 
-	string c;
+	int f=0; //Questo è per il fla, il flag serve casomai inseriamo una città che non abbiamo inserito 
+	string citt;
 	do //Con il cilco do possiamo richiedere l'inserimento della città se ne inseriamo una sbagliata
 	{
 		cout<<"Inserisci una città: "; 
-		cin>>c;
+		cin>>citt;
 		for (i=0; i<r; i++)
 		{
-			for (i=0; i<c; i++)
+			for (i=0; i<r; i++)
 			{
-				if (c == v[i])
+				if (citt == v[i])
 				{
-					cout<<c<<mis[i][j];
+					cout<<citt<<min;
 					f=1; //Quando il programma trova la città inserita, il flag diventa 1, e i due cicli terminano perchè una volta trovata la città e inutile che continuano
 				}
 		}
