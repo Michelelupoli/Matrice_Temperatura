@@ -55,7 +55,7 @@ int main ()
 			{
 				if (c == v[i])
 				{
-					cout<<c<<v[i];
+					cout<<c<<mis[i][j];
 					f=1; i=r; i=c; //Quando il programma trova la città inserita, il flag diventa 1, e i due cicli terminano perchè una volta trovata la città e inutile che continuano
 				}
 		}
