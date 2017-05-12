@@ -11,7 +11,7 @@ int main ()
 		cout<<"Inserisci numero righe: ";
 		cin>>r;
 	}
-	while ((n <= 0) && (n > 10));
+	while ((r <= 0) && (n > 10));
 	do
 	{
 		cout<<"Inserisci numero colonne: ";
