@@ -4,7 +4,7 @@ using namespace std;
 int main ()
 {
 	//Inserimento matrice
-	in r,c,i,j, mis[10][12];
+	int r,c,i,j, mis[10][12];
 	string v[10];
 	do
 	{
